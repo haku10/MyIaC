@@ -13,6 +13,6 @@ resource "aws_subnet" "my_subnet1_1" {
     availability_zone = "ap-northeast-1a"
 
   tags = {
-    Name = "sample-subnet1"
+    Name = "my_subnet1_1"
   }
 }
