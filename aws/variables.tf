@@ -16,5 +16,13 @@ variable aws_instance_tag_name {
 }
 
 variable "ami_id" {
-  default = "ami-086ca990ae371235f"
+  default = "ami-0ede32f8db20757b3"
+}
+
+variable "aws_db_username" {
+  default = "root"
+}
+
+variable "aws_db_password" {
+  default = "test1234"
 }
