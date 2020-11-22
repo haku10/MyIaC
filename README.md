@@ -37,3 +37,9 @@ aws_secret_access_key = {your_secret_access_key}
 
 # 設定されるサービスを事前に確認する
 `terraform plan`
+
+# 確認ができたら作成する
+``
+
+# 作成したサービスを削除する
+`terraform destroy`

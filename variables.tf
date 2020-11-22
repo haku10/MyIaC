@@ -1,4 +1,7 @@
 # 変数設定のファイル
+variable "stage" {
+  default = "test"
+}
 
 variable aws_instance_type {
   type        = string
@@ -9,7 +12,7 @@ variable aws_instance_type {
 variable aws_instance_tag_name {
   type        = string
   description = "AWSインスタンスタグ：Name"
-  default     = "myInstance1"
+  default     = "my_instance1"
 }
 
 variable "ami_id" {

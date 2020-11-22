@@ -1,5 +1,5 @@
 # Create a VPC
-resource "aws_vpc" "myVPC" {
+resource "aws_vpc" "my_vpc1" {
   cidr_block = "10.0.0.0/16"
   instance_tenancy = "default"
   enable_dns_support = "true"
@@ -7,8 +7,8 @@ resource "aws_vpc" "myVPC" {
 }
 
 # Create a subnet
-resource "aws_subnet" "subnet1" {
-    vpc_id = aws_vpc.myVPC.id
+resource "aws_subnet" "my_subnet1_1" {
+    vpc_id = aws_vpc.my_vpc1.id
     cidr_block = "10.0.1.0/24"
     availability_zone = "ap-northeast-1a"
 
