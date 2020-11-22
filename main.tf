@@ -1,6 +1,7 @@
-resource aws_instance tutorial {
-  ami           = "ami-063f4c001c8a8d125"
+resource "aws_instance" "myInstance1" {
+  ami           = var.ami_id
   instance_type = var.aws_instance_type
+  subnet_id = aws_subnet.subnet1.id
   tags = {
     Name = var.aws_instance_tag_name
   }

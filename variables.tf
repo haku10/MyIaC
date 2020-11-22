@@ -1,3 +1,5 @@
+# 変数設定のファイル
+
 variable aws_instance_type {
   type        = string
   description = "AWSインスタンス種別"
@@ -7,5 +9,9 @@ variable aws_instance_type {
 variable aws_instance_tag_name {
   type        = string
   description = "AWSインスタンスタグ：Name"
-  default     = "terraform-tutorial"
+  default     = "myInstance1"
+}
+
+variable "ami_id" {
+  default = "ami-086ca990ae371235f"
 }
