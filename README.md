@@ -49,3 +49,6 @@ terraform init
 
 ### 作成したサービスを削除する
 `terraform destroy`
+
+### 参考ドキュメント
+`https://registry.terraform.io/providers/hashicorp/aws/latest`
