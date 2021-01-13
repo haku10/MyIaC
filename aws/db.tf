@@ -24,10 +24,10 @@ resource "aws_db_instance" "test-db" {
 }
 
 # parameter_group
-resource "aws_db_parameter_group" "aurora" {
-  name        = "test-${var.stage}-aurora"
+resource "aws_db_parameter_group" "mysql" {
+  name        = "test-${var.stage}-mysql"
   family      = "aurora-mysql5.7"
-  description = "test-${var.stage}-aurora"
+  description = "test-${var.stage}-mysql"
 
   parameter {
     name         = "innodb_lock_wait_timeout"
