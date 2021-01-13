@@ -29,13 +29,17 @@ aws_secret_access_key = {your_secret_access_key}
 `direnv allow`
 
 # terraformのインストール(for Mac)
-`$ brew install terraform`
-`$ terraform version`
+```
+$ brew install terraform
+$ terraform version
+```
 
 ## AWSのサービスを使用する場合
-`cd aws`
-`aws configure --profile XXX`
-`terraform init`
+```
+cd aws
+aws configure --profile XXX
+terraform init
+```
 
 ### 設定されるサービスを事前に確認する
 `terraform plan`

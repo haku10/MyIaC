@@ -21,5 +21,5 @@ resource "aws_route" "my_route" {
   route_table_id         = aws_route_table.my-route-table.id
   destination_cidr_block = "0.0.0.0/0"
   gateway_id             = aws_internet_gateway.my-gateway.id
-  depends_on             = [aws_route_table.my-route-table]
+  depends_on             = aws_route_table.my-route-table
 }
